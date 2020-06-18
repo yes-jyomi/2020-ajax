@@ -5,7 +5,10 @@
 <title>:gt 및 :lt Filter Selector</title>
 <script type="text/javascript" src="jquery-3.5.1.js"></script>
 <script type="text/javascript">
-
+  $(document).ready(function() {
+    $("td:gt(4)").css("background-color", "yellow");
+    $("td:gt(-2)").text("gt(-2)");
+  });
 </script>
 </head>
 <body>

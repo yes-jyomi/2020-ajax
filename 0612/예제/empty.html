@@ -5,8 +5,9 @@
 <title>:empty Filter Selector</title>
 <script type="text/javascript" src="jquery-3.5.1.js"></script>
 <script type="text/javascript">
-
-
+  $(document).ready(function() {
+    $("td:empty").text("빈 문자열").css("background-color", "green");
+  });
 </script>
 </head>
 <body>

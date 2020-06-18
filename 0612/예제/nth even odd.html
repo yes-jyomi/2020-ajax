@@ -10,8 +10,10 @@
  </style>
 <script type="text/javascript" src="jquery-3.5.1.js"></script>
 <script type="text/javascript">
-
-
+  $(document).ready(function() {
+    $("li:nth-child(even)").css("font-size", "30px");
+    $("li:nth-child(odd)").css("background-color", "green");
+  })
 </script>
 </head>
 <body>

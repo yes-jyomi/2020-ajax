@@ -5,8 +5,12 @@
 <title>:focus Filter Selector</title>
 <script type="text/javascript" src="jquery-3.5.1.js"></script>
 <script type="text/javascript">
-
-
+  $(document).ready(function() {
+    $("input").click(function() {
+      $("input:focus").css("background-color", "yellow");
+      $("input:not(:focus)").removeAttr("style");
+    });
+  });
 </script>
 </head>
 <body>

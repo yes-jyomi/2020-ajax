@@ -5,8 +5,10 @@
 <title>:not() Filter Selector</title>
 <script type="text/javascript" src="jquery-3.5.1.js"></script>
 <script type="text/javascript">
-
-  
+  $(document).ready(function() {
+    // input 태그 중 체크되지 않은 것의 배경색을 바꿨다.
+    $("input:not(:checked) + span").css("background-color", "green");
+  });
 </script>
 </head>
 <body>

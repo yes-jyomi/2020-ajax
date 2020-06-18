@@ -10,8 +10,10 @@
 </style>
 <script type="text/javascript" src="jquery-3.5.1.js"></script>
 <script type="text/javascript">
-
-   
+  $(document).ready(function() {
+    // 체이닝
+    $("td:parent").css("background-color", "green");
+  });
 </script>
 </head>
 <body>
